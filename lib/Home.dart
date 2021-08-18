@@ -32,10 +32,11 @@ class _HomeState extends State<Home> {
             children: <Widget>[
               TextButton(
                 onPressed: () {
-                  DatePicker.showDatePicker(context,
+                  DatePicker.showDateTimePicker(context,
                       showTitleActions: true,
-                      minTime: DateTime(2021, 8, 17, 12, 00),
-                      maxTime: DateTime(2200, 6, 7, 00, 00), onChanged: (date) {
+                      minTime: DateTime(2021, 8, 17, 00, 00),
+                      maxTime: DateTime(2200, 12, 31, 00, 00),
+                      onChanged: (date) {
                     print('change $date');
                   }, onConfirm: (date) {
                     setState(() {
@@ -53,10 +54,11 @@ class _HomeState extends State<Home> {
             children: <Widget>[
               TextButton(
                   onPressed: () {
-                    DatePicker.showDatePicker(context,
+                    DatePicker.showDateTimePicker(context,
                         showTitleActions: true,
-                        minTime: DateTime(2021, 8, 17),
-                        maxTime: DateTime(2200, 6, 7), onChanged: (date) {
+                        minTime: DateTime(2021, 8, 17, 00, 00),
+                        maxTime: DateTime(2200, 12, 31, 00, 00),
+                        onChanged: (date) {
                       print('change $date');
                     }, onConfirm: (date) {
                       setState(() {
