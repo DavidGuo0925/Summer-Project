@@ -34,8 +34,8 @@ class _HomeState extends State<Home> {
                 onPressed: () {
                   DatePicker.showDatePicker(context,
                       showTitleActions: true,
-                      minTime: DateTime(2021, 8, 17),
-                      maxTime: DateTime(2200, 6, 7), onChanged: (date) {
+                      minTime: DateTime(2021, 8, 17, 12, 00),
+                      maxTime: DateTime(2200, 6, 7, 00, 00), onChanged: (date) {
                     print('change $date');
                   }, onConfirm: (date) {
                     setState(() {
