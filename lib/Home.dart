@@ -41,7 +41,7 @@ class _HomeState extends State<Home> {
                     setState(() {
                       this.startTime = date;
                     });
-                  }, currentTime: DateTime.now(), locale: LocaleType.en);
+                  }, currentTime: DateTime.now(), locale: LocaleType.tw);
                 },
                 child: Text('Event Start Time',
                     style: TextStyle(color: Colors.lightBlue)),
@@ -62,7 +62,7 @@ class _HomeState extends State<Home> {
                       setState(() {
                         this.endTime = date;
                       });
-                    }, currentTime: DateTime.now(), locale: LocaleType.en);
+                    }, currentTime: DateTime.now(), locale: LocaleType.tw);
                   },
                   child: Text(
                     'Event End Time',
